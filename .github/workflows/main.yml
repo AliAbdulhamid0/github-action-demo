@@ -13,4 +13,9 @@ jobs:
     steps:
       - name: lets echo a message
         run: echo "kolo fol ISA" 
-    
+
+      - name: checkout my code 
+        uses: actions/checkout@v6.0.1
+
+      - name: list all file included the hidden ones 
+        run: ls -la 
