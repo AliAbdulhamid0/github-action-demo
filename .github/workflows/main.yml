@@ -13,9 +13,15 @@ jobs:
     steps:
       - name: lets echo a message
         run: echo "kolo fol ISA" 
+<<<<<<< HEAD
+        run: cat README.md
+    
+=======
+>>>>>>> 7bcfee0b61717a2279a817f5ddb6f9a06ab644c1
 
       - name: checkout my code 
         uses: actions/checkout@v6.0.1
 
       - name: list all file included the hidden ones 
         run: ls -la 
+        run: cat README.md
