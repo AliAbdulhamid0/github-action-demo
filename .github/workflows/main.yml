@@ -1,0 +1,16 @@
+name: test echo message 
+
+
+on: 
+  push: 
+    branches:
+      - main 
+
+jobs:
+  The_first_job_for_me: 
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: lets echo a message
+        run: echo "kolo fol ISA" 
+    
