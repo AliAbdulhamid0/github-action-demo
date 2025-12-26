@@ -1,0 +1,13 @@
+name: manual workflow
+
+on: 
+  workflow_dispatch:
+
+
+jobs:
+  manually_running:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: test the manual wrokflow
+        run: echo " all things good ISA:" 
