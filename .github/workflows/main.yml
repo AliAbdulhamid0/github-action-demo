@@ -1,24 +1,15 @@
-name: test echo message 
-
+name: test repo_dispatch
 
 on: 
-  push: 
-    branches:
-      - main 
+  repository_dispatch:
+    types: 
+      - incident_report 
 
-jobs:
-  The_first_job_for_me: 
+
+
+jobs: 
+  handle_incident:
     runs-on: ubuntu-latest 
-
-    steps:
-      - name: lets echo a message
-        run: echo "kolo fol ISA" 
-
-      - name: checkout my code 
-        uses: actions/checkout@v6.0.1
-
-      - name: list all file included the hidden ones 
-        run: ls -la 
-
-      - name: make cat on file
-        run: cat README.md
+    steps: 
+      - name: print incident details 
+        run: echo " incident reported "
